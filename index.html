@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlogDeCafé</title>
+    <meta name="descripcion" content="Página web de blog de café">
+    
+    <!-- Prefetch-->
+     <link rel="Prefetch" href="nosotros.html" as="document">
+
+    <!-- Preload: a lo que se requiere que funcione inmediatamente -->
+    <link rel="Preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="Preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">    
+
+    <link rel="Preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">  
+    
 </head>
 <body>
     <header class="header">
@@ -37,7 +49,11 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog1.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+                    </picture>
+                    
                 </div>
 
                 <div class="entrada__contenido">
@@ -51,7 +67,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog2.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
@@ -65,7 +84,10 @@
 
                <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog3.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
@@ -85,21 +107,21 @@
                     <h4 class="no-margin">Técnicas de Extracción de Café</h4>
                     <p class="widget-curso__label">Precio: <span class="widget-curso__info">Gratis</span></p>
                     <p class="widget-curso__label">Cupo: <span class="widget-curso__info">20</span></p>
-                    <a href="cursos.html" class="boton boton--secundario">Más Información</a>
+                    <a href="cursos.html" class="boton boton--secundario">Más Información sobre cursos</a>
                 </li>
 
                 <li class="widget-curso">
                     <h4 class="no-margin">Taller para Tostar y Moler Grano</h4>
                     <p class="widget-curso__label">Precio: <span class="widget-curso__info">Gratis</span></p>
                     <p class="widget-curso__label">Cupo: <span class="widget-curso__info">20</span></p>
-                    <a href="cursos.html" class="boton boton--secundario">Más Información</a>
+                    <a href="cursos.html" class="boton boton--secundario">Más Información sobre cursos</a>
                 </li>
 
                 <li class="widget-curso">
                     <h4 class="no-margin">4 Recetas de Café para Principiantes</h4>
                     <p class="widget-curso__label">Precio: <span class="widget-curso__info">Gratis</span></p>
                     <p class="widget-curso__label">Cupo: <span class="widget-curso__info">20</span></p>
-                    <a href="cursos.html" class="boton boton--secundario">Más Información</a>
+                    <a href="cursos.html" class="boton boton--secundario">Más Información sobre cursos</a>
                 </li>
 
 
